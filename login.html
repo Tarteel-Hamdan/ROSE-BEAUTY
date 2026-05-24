@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login | Beauty Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background: linear-gradient(to right, #e9b1c2, #b77e86);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:900px;
+    background:white;
+    display:flex;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* LEFT SIDE */
+.info{
+    width:50%;
+    background: linear-gradient(to bottom, #b76e79, #c0868f);
+    color:white;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.info h1{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.info p{
+    font-size:16px;
+    line-height:1.7;
+}
+
+/* RIGHT SIDE */
+.login{
+    width:50%;
+    padding:50px;
+}
+
+.login h2{
+    margin-bottom:25px;
+    color:#333;
+}
+
+.login label{
+    display:block;
+    margin-bottom:5px;
+    color:#555;
+}
+
+.login input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.login button{
+    width:100%;
+    padding:12px;
+    background:#b76e79;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.login button:hover{
+    background:#ba8c93;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT -->
+    <div class="info">
+        <h1>Rosé Beauty</h1>
+        <p>
+            Welcome to the Beauty Shop management system.<br>
+            This panel allows the administrator to manage makeup,
+            skincare, and beauty products easily by adding, editing,
+            or deleting products from the system.
+        </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="login">
+        <h2>Login</h2>
+
+        <form method="post" action="login.php">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
